@@ -1,0 +1,13 @@
+main() async {
+  test();
+print('After All done');
+}
+
+test()async{
+  await Future.delayed(Duration(seconds: 5),(){
+    print('Run after 5 sec');
+  });
+print('Function End');
+
+
+}
